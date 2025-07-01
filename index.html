@@ -4,11 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Goal Overview</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
       rel="stylesheet"
@@ -17,18 +13,6 @@
       body {
         font-family: "Cinzel", sans-serif;
         background-color: #fff7f0;
-      }
-
-      .bg-custom-orange {
-        background-color: #fd7e29;
-      }
-
-      .text-custom-orange {
-        color: #fd7e29;
-      }
-
-      .border-custom-orange {
-        border-color: #fd7e29;
       }
 
       @layer utilities {
@@ -61,92 +45,87 @@
       }
     </style>
   </head>
+
   <body
-    class="min-h-screen flex flex-col bg-gradient-to-r from-[#485563] to-[#29323c]"
+    class="min-h-screen flex flex-col overflow-x-hidden bg-gradient-to-br from-[#485563] to-[#29323c]"
   >
-    <main class="flex-grow w-full max-w-7xl mx-auto p-4 sm:p-6 md:p-8">
-      <!-- Header Section -->
-      <header class="pt-8 pb-12 md:pb-16">
-        <div class="text-center md:text-sm md:text-start text-white mb-20">
-          Tahsan Rafi's Co.
-        </div>
-        <div class="flex flex-col md:flex-row justify-around items-center">
-          <div class="flex flex-col justify-center">
-            <h1
-              class="text-5xl md:text-6xl text-center font-extrabold text-white animate-fadeUp"
-            >
+    <main class="flex-grow w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+      <!-- Header -->
+      <header class="pt-6 pb-12">
+        <div class="text-center text-white text-sm mb-8">Tahsan Rafi's Co.</div>
+        <div
+          class="flex flex-col md:flex-row justify-center items-center gap-6"
+        >
+          <div class="text-center md:text-left max-w-md animate-fadeUp">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-white">
               Tahsan Rafi
             </h1>
             <p
-              class="text-center text-lg text-white mt-4 px-2 animate-fadeUp animate-delay-200"
+              class="text-white mt-4 text-base sm:text-lg animate-fadeUp animate-delay-200"
             >
-              Hi, <span class="font-bold text-red-500">I’m Tahsan Rafi,</span>
-              <br />
-              and I’ll be your guide through this complete programming journey.
-              <br />
+              Hi, <span class="font-bold text-red-500">I’m Tahsan Rafi,</span
+              ><br />
+              and I’ll be your guide through this complete programming
+              journey.<br />
               This course is designed to take you from the very basics of coding
-              in <br />
-              C/Python all the way to advanced algorithms and data structures.
+              in C/Python all the way to advanced algorithms and data
+              structures.
             </p>
           </div>
-          <div class="w-50 h-50 md:w-60 md:h-70 mt-6 md:mt-0 md:ml-6">
+          <div
+            class="w-full max-w-[250px] rounded-xl overflow-hidden shadow-lg shadow-red-400 animate-fadeUp animate-delay-400"
+          >
             <img
               src="assets/20240107_162825.jpg"
               alt="Tahsan Rafi"
-              class="rounded-xl object-cover w-full h-full shadow-lg shadow-red-400 hover:scale-105 transition-transform duration-500 ease-in-out"
+              class="w-full object-cover hover:scale-105 transition duration-500 ease-in-out"
             />
           </div>
         </div>
       </header>
 
-      <!-- Title -->
+      <!-- Course Title -->
       <div
-        class="font-bold text-white text-4xl text-center py-10 mt-20 animate-pulse"
+        class="text-3xl sm:text-4xl font-bold text-center text-white mt-16 mb-10 animate-pulse"
       >
-        <h1>My Course Curriculum</h1>
+        My Course Curriculum
       </div>
 
       <!-- Semester Sections -->
-      <div class="space-y-10">
-        <!-- Semester 1 -->
+      <div class="space-y-14">
+        <!-- SEMESTER 1 -->
         <section
-          class="rounded-2xl p-6 md:p-8 text-white animate-fadeUp animate-delay-200"
-          style="
-            background: linear-gradient(
-              to right,
-              #eaeaea,
-              #dbdbdb,
-              #f2f2f2,
-              #f9f5df
-            );
-          "
+          class="rounded-2xl px-4 py-6 sm:p-8 bg-gradient-to-r from-gray-100 to-yellow-50 text-black animate-fadeUp animate-delay-200"
         >
-          <h2 class="text-4xl text-black font-bold mb-6 text-center">
+          <h2 class="text-2xl sm:text-3xl font-bold text-center mb-6">
             Semester 1 💻
           </h2>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Card -->
             <div
-              class="bg-gradient-to-r from-[#485563] to-[#29323c] text-white rounded-xl p-5 shadow-lg transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl"
+              class="bg-gradient-to-br from-[#485563] to-[#29323c] text-white p-5 rounded-xl shadow-lg hover:scale-105 transition duration-300"
             >
-              <ul class="list-disc flex flex-col gap-5 p-4 font-semibold">
+              <ul class="list-disc space-y-3 pl-4 font-semibold">
                 <li>C/Python intro</li>
                 <li>Variables, Data types, Operators</li>
                 <li>If/else, Nested conditions, Loops</li>
               </ul>
             </div>
+            <!-- Card -->
             <div
-              class="bg-gradient-to-r from-[#485563] to-[#29323c] text-white rounded-xl p-5 shadow-lg transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl"
+              class="bg-gradient-to-br from-[#485563] to-[#29323c] text-white p-5 rounded-xl shadow-lg hover:scale-105 transition duration-300"
             >
-              <ul class="list-disc flex flex-col gap-5 p-4 font-semibold">
+              <ul class="list-disc space-y-3 pl-4 font-semibold">
                 <li>Functions & Recursion</li>
                 <li>Pointers</li>
                 <li>1D & 2D Arrays, String operations</li>
               </ul>
             </div>
+            <!-- Card -->
             <div
-              class="bg-gradient-to-r from-[#485563] to-[#29323c] text-white rounded-xl p-5 shadow-lg transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl"
+              class="bg-gradient-to-br from-[#485563] to-[#29323c] text-white p-5 rounded-xl shadow-lg hover:scale-105 transition duration-300"
             >
-              <ul class="list-disc flex flex-col gap-5 p-4 font-semibold">
+              <ul class="list-disc space-y-3 pl-4 font-semibold">
                 <li>Basic Problem Solving</li>
                 <li>Hand-picked problems</li>
                 <li>Debugging techniques</li>
@@ -155,45 +134,37 @@
           </div>
         </section>
 
-        <!-- Semester 2 -->
+        <!-- SEMESTER 2 -->
         <section
-          class="rounded-2xl p-6 md:p-8 text-white animate-fadeUp animate-delay-400"
-          style="
-            background: linear-gradient(
-              to right,
-              #eaeaea,
-              #dbdbdb,
-              #f2f2f2,
-              #f9f5df
-            );
-          "
+          class="rounded-2xl px-4 py-6 sm:p-8 bg-gradient-to-r from-gray-100 to-yellow-50 text-black animate-fadeUp animate-delay-400"
         >
-          <h2 class="text-4xl text-black font-bold mb-6 text-center">
+          <h2 class="text-2xl sm:text-3xl font-bold text-center mb-6">
             Semester 2 ⚙️
           </h2>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Cards -->
             <div
-              class="bg-gradient-to-r from-[#485563] to-[#29323c] text-white rounded-xl p-5 shadow-lg transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl"
+              class="bg-gradient-to-br from-[#485563] to-[#29323c] text-white p-5 rounded-xl shadow-lg hover:scale-105 transition duration-300"
             >
-              <ul class="list-disc flex flex-col gap-5 p-4 font-semibold">
+              <ul class="list-disc space-y-3 pl-4 font-semibold">
                 <li>Object-Oriented Programming</li>
                 <li>Classes and Objects</li>
                 <li>Inheritance & Polymorphism</li>
               </ul>
             </div>
             <div
-              class="bg-gradient-to-r from-[#485563] to-[#29323c] text-white rounded-xl p-5 shadow-lg transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl"
+              class="bg-gradient-to-br from-[#485563] to-[#29323c] text-white p-5 rounded-xl shadow-lg hover:scale-105 transition duration-300"
             >
-              <ul class="list-disc flex flex-col gap-5 p-4 font-semibold">
+              <ul class="list-disc space-y-3 pl-4 font-semibold">
                 <li>Data Structures</li>
                 <li>Stacks & Queues</li>
                 <li>Linked Lists</li>
               </ul>
             </div>
             <div
-              class="bg-gradient-to-r from-[#485563] to-[#29323c] text-white rounded-xl p-5 shadow-lg transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl"
+              class="bg-gradient-to-br from-[#485563] to-[#29323c] text-white p-5 rounded-xl shadow-lg hover:scale-105 transition duration-300"
             >
-              <ul class="list-disc flex flex-col gap-5 p-4 font-semibold">
+              <ul class="list-disc space-y-3 pl-4 font-semibold">
                 <li>Problem Solving II</li>
                 <li>Sorting & Searching</li>
                 <li>Time Complexity</li>
@@ -202,45 +173,37 @@
           </div>
         </section>
 
-        <!-- Semester 3 -->
+        <!-- SEMESTER 3 -->
         <section
-          class="rounded-2xl p-6 md:p-8 text-white animate-fadeUp animate-delay-600"
-          style="
-            background: linear-gradient(
-              to right,
-              #eaeaea,
-              #dbdbdb,
-              #f2f2f2,
-              #f9f5df
-            );
-          "
+          class="rounded-2xl px-4 py-6 sm:p-8 bg-gradient-to-r from-gray-100 to-yellow-50 text-black animate-fadeUp animate-delay-600"
         >
-          <h2 class="text-4xl text-black font-bold mb-6 text-center">
+          <h2 class="text-2xl sm:text-3xl font-bold text-center mb-6">
             Semester 3 🚀
           </h2>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Cards -->
             <div
-              class="bg-gradient-to-r from-[#485563] to-[#29323c] text-white rounded-xl p-5 shadow-lg transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl"
+              class="bg-gradient-to-br from-[#485563] to-[#29323c] text-white p-5 rounded-xl shadow-lg hover:scale-105 transition duration-300"
             >
-              <ul class="list-disc flex flex-col gap-5 p-4 font-semibold">
+              <ul class="list-disc space-y-3 pl-4 font-semibold">
                 <li>Advanced Algorithms</li>
                 <li>Greedy & DP</li>
                 <li>Graph Traversals</li>
               </ul>
             </div>
             <div
-              class="bg-gradient-to-r from-[#485563] to-[#29323c] text-white rounded-xl p-5 shadow-lg transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl"
+              class="bg-gradient-to-br from-[#485563] to-[#29323c] text-white p-5 rounded-xl shadow-lg hover:scale-105 transition duration-300"
             >
-              <ul class="list-disc flex flex-col gap-5 p-4 font-semibold">
+              <ul class="list-disc space-y-3 pl-4 font-semibold">
                 <li>Competitive Programming</li>
                 <li>Mock Contests</li>
                 <li>Strategy & Optimization</li>
               </ul>
             </div>
             <div
-              class="bg-gradient-to-r from-[#485563] to-[#29323c] text-white rounded-xl p-5 shadow-lg transform hover:scale-105 transition-transform duration-300 hover:shadow-2xl"
+              class="bg-gradient-to-br from-[#485563] to-[#29323c] text-white p-5 rounded-xl shadow-lg hover:scale-105 transition duration-300"
             >
-              <ul class="list-disc flex flex-col gap-5 p-4 font-semibold">
+              <ul class="list-disc space-y-3 pl-4 font-semibold">
                 <li>Project Making</li>
                 <li>Leetcode Problem Solve</li>
                 <li>Final Exam</li>
@@ -253,49 +216,38 @@
 
     <!-- Footer -->
     <footer
-      class="w-full rounded-t-2xl p-8 mt-20 text-black"
-      style="
-        background: linear-gradient(
-          to right,
-          #eaeaea,
-          #dbdbdb,
-          #f2f2f2,
-          #f9f5df
-        );
-      "
+      class="w-full mt-20 px-4 py-8 bg-gradient-to-r from-gray-100 to-yellow-50 text-black"
     >
-      <p class="text-sm font-semibold opacity-80 mb-4 text-center">
+      <p class="text-center text-sm font-semibold mb-4 opacity-80">
         Tahsan Rafi's Co.
       </p>
-      <div class="grid grid-cols-1 md:flex justify-around gap-8">
-        <div>
-          <h3 class="text-3xl font-bold text-center">Reach out anytime</h3>
-          <div class="flex flex-row justify-between gap-4">
-            <img class="max-w-52" src="assets/CodeChef_Logo.svg.png" alt="" />
+      <div class="flex flex-col md:flex-row items-center justify-around gap-6">
+        <div class="text-center">
+          <h3 class="text-xl sm:text-2xl font-bold mb-4">Reach out anytime</h3>
+          <div
+            class="items-center translate-x-10 md:flex md:translate-x-[-3] md:gap-7 md:justify-center"
+          >
             <img
-              class="max-w-52 object-contain"
+              class="h-12 object-contain"
+              src="assets/CodeChef_Logo.svg.png"
+              alt=""
+            />
+            <img
+              class="w-[120px] md:h-12 object-contain"
               src="assets/images.png"
               alt=""
             />
           </div>
         </div>
-        <div class="text-sm">
-          <p class="font-semibold mb-1">EMAIL ADDRESS</p>
-          <a
-            href="mailto:tahsanrafi@supra.com"
-            class="underline opacity-90 hover:opacity-100"
-            >.......</a
+        <div class="text-sm text-center md:text-left">
+          <p class="font-semibold">EMAIL ADDRESS</p>
+          <a href="mailto:tahsanrafi@supra.com" class="underline block"
+            >tahsanrafi@supra.com</a
           >
-
-          <p class="font-semibold mt-4 mb-1">WEBSITE</p>
-          <a href="#" class="underline opacity-90 hover:opacity-100">.......</a>
-
-          <p class="font-semibold mt-4 mb-1">PHONE NUMBER</p>
-          <a
-            href="tel:+00123456789"
-            class="underline opacity-90 hover:opacity-100"
-            >........</a
-          >
+          <p class="font-semibold mt-4">WEBSITE</p>
+          <a href="#" class="underline block">supraco.com/tahsanrafi</a>
+          <p class="font-semibold mt-4">PHONE NUMBER</p>
+          <a href="tel:+00123456789" class="underline block">+00 123 456 789</a>
         </div>
       </div>
     </footer>
